@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Sergey Ryabov](https://up.htmlacademy.ru/htmlcss/16/user/161145).
-* Наставник: `Неизвестно`.
+* Наставник: [Олег Зубов](https://htmlacademy.ru/profile/id42701).
 
 ---
 
