@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+  <body>
+    <header class="container main-header">
+      <div class="logo-header">
+        <img src="http://placehold.it/164x36" alt="device logo">
+      </div>
+      <div class="half-width search">
+        <form action="/echo" method="post">
+          <button type="button" name="search"></button>
+          <input type="text" placeholder="Поиск по сайту">
+        </form>
+      </div>
+      <div class="half-width user-panel">
+        <a href="#" class="login">Войти</a>
+        <a href="#" class="compare">Срванить</a>
+        <a href="#" class="basket">Корзина</a>
+      </div>
+      <nav main-navigation>
+        <div class="half-width catalogue">
+          <a href="#">Каталог товаров</a>
+          <div class="hidden-categories">
+            <a href="#">Виртуальная реальность</a>
+            <a href="#">Моноподы для селфи</a>
+            <a href="#">Экшн-камеры</a>
+            <a href="#">Фитнесс-браслеты</a>
+            <a href="#">Умные часы</a>
+            <a href="#">Квадрокоптеры</a>
+          </div>
+        </div>
+        <div class="half-width navigation">
+          <a href="#" class="delivery">Доставка</a>
+          <a href="#" class="garanty">Гарантия</a>
+          <a href="#" class="contacts">Контакты</a>
+        </div>
+      </nav>
+    </header>
+    <section class="navigation-store">
+      <div class="container">
+        <h1>Моноподы для селфи</h1>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a>Моноподы для селфи</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="catalogue-left-head">
+      <div class="catalogue-left">
+        <h2 class="filter-title">Фильтр:</h2>
+      </div>
+    </div>
+    <div class="catalog-left-body">
+      <div class="catalogue-left filter">
+        <form action="/echo" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <input type="range" name="price" min="0" max="50000">
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <label>
+              <input type="checkbox" name="color"  value="black">
+              Черный
+            </label>
+            <label>
+              <input type="checkbox" name="color"  value="white">
+              Белый
+            </label>
+            <label>
+              <input type="checkbox" name="color"  value="blue">
+              Синий
+            </label>
+            <label>
+              <input type="checkbox" name="color"  value="red">
+              Красный
+            </label>
+            <label>
+              <input type="checkbox" name="color"  value="pink">
+              Розовый
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <label>
+              <input type="radio" name="bluetooth" value="TRUE">
+              Есть
+            </label>
+            <label>
+              <input type="radio" name="bluetooth" value="FALSE">
+              Нет
+            </label>
+          </fieldset>
+          <button class="line-trough" type="submit"></button>
+        </form>
+      </div>
+    </div>
+    <div class="catalogue-right-top">
+      <div class="catalogue-right sorting">
+        <h2>Сортировка:</h2>
+        <ul>
+          <li><a class="price active" href="#">По цене</a></li>
+          <li><a class="type" href="#">По типу</a></li>
+          <li><a class="popularity" href="#">По популярности</a></li> <!--ссылки в js отменяется = переход-->
+        </ul>
+        <a class="sort-arrow asc" href="#"></a>
+        <a class="sort-arrow desc" href="#"></a>
+      </div>
+      <div class="catalogue-right items">
+        <article class="item">
+          <img src="http://placehold.it/360x380" alt="item-1">
+          <a class="item-name" href="#">Любительская селфи-палка</a>
+          <p class="item-price">500 руб.</p>
+        </article>
+        <article class="item">
+          <img src="http://placehold.it/360x380" alt="item-2">
+          <a class="item-name" href="#">Профессиональная селфи-палка </a>
+          <p class="item-price">1 500 руб.</p>
+        </article>
+        <article class="item">
+          <img src="http://placehold.it/360x380" alt="item-3">
+          <a class="item-name" href="#">Непотопляемая селфи-палка</a>
+          <p class="item-price">2 500 руб.</p>
+        </article>
+        <article class="item item-new">
+          <img src="http://placehold.it/360x380" alt="item-4">
+          <a class="item-name" href="#">Селфи-палка «Следуй за мной»</a>
+          <p class="item-price">4 900 руб.</p>
+        </article>
+      </div>
+      <div class="pages">
+        <a href="#" class="prev">Назад</a>
+        <ul>
+          <li><a class="disabled">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+        <a href="#" class="next">Вперед</a>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="logo-footer">
+            <img src="http://placehold.it/163x36" alt="device logo">
+          </div>
+          <div class="user-panel">
+            <a href="#" class="login">Войти</a>
+            <a href="#" class="compare">Срванить</a>
+            <a href="#" class="basket">Корзина</a>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="address">
+            <p>г. Москва, ул. Строителей, 15</p>
+          </div>
+          <div class="navigation">
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Контакты</a>
+          </div>
+          <div class="telephone">
+            <p>Тел.: +7 (495) 495-95-95</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="social-media">
+            <a class="social vk" href="#">VK</a>
+            <a class="social fb" href="#">FB</a> <!-- текст внутри ссылок оставлять = хорошая практика -->
+            <a class="social insta" href="#">Instagram</a>
+          </div>
+          <div class="web-developer">
+            <a href="#"><img src="#" alt="html academy logo"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
