@@ -1,0 +1,21 @@
+body {
+  color: #464646;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+h2 {
+  color: #000;
+  font-family: Gilroy;
+  font-size: 47px;
+  font-weight: 700;
+}
+
+h3 {
+  color: #000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 700;
+}
