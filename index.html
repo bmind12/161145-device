@@ -6,155 +6,181 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container main-header">
-      <div class="logo-header">
-        <img src="img/logo.png" width="163" height="36" alt="device logo">
-      </div>
-      <div class="half-width search">
-        <form action="/echo" method="post">
-          <button type="button" name="search"></button>
-          <input type="text" placeholder="Поиск по сайту">
-        </form>
-      </div>
-      <div class="half-width user-panel displayed">
-        <a href="#" class="login">Войти</a>
-        <a href="#" class="compare">Срванить</a>
-        <a href="#" class="basket">Корзина</a>
-      </div>
-      <nav main-navigation>
-        <div class="half-width catalogue">
-          <a href="#">Каталог товаров</a>
-          <div class="hidden-categories"> <!-- Или общий класс или не задаваить абс позиционирование -->
-            <a href="#">Виртуальная реальность</a>
-            <a href="#">Моноподы для селфи</a>
-            <a href="#">Экшн-камеры</a>
-            <a href="#">Фитнесс-браслеты</a>
-            <a href="#">Умные часы</a>
-            <a href="#">Квадрокоптеры</a>
+    <header class="container">
+      <div class="main-header">
+        <div class="logo-header">
+          <img src="img/logo.png" width="163" height="36" alt="device logo">
+        </div>
+        <div class="flex-box">
+          <div class="half-width search">
+            <form action="/echo" method="post">
+              <button type="button" name="search"></button>
+              <input type="text" placeholder="Поиск по сайту">
+            </form>
+          </div>
+          <div class="half-width user-panel-header displayed">
+            <a href="#" class="login">Войти</a>
+            <a href="#" class="compare">Срванить</a>
+            <a href="#" class="basket">Корзина</a>
           </div>
         </div>
-        <div class="half-width navigation">
-          <a href="#" class="delivery">Доставка</a>
-          <a href="#" class="warranty">Гарантия</a>
-          <a href="#" class="contacts">Контакты</a>
-        </div>
-      </nav>
+        <nav class="flex-box main-navigation">
+          <div class="half-width sections">
+            <a href="#">Каталог товаров</a>
+            <div class="hidden-sections">
+              <a href="#">Виртуальная реальность</a>
+              <a href="#">Моноподы для селфи</a>
+              <a href="#">Экшн-камеры</a>
+              <a href="#">Фитнесс-браслеты</a>
+              <a href="#">Умные часы</a>
+              <a href="#">Квадрокоптеры</a>
+            </div>
+          </div>
+          <div class="half-width navigation">
+            <a href="#" class="delivery">Доставка</a>
+            <a href="#" class="warranty">Гарантия</a>
+            <a href="#" class="contacts">Контакты</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <section class="containter slider">
-      <div class="half-width image-1">
-        <img src="img/slider-1.png" width="384" height="486" alt="item-1 image">
-      </div>
-      <div class="half-width description-1">
-        <h2>Делай селфи, как Бен Стиллер!</h2>
-        <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего пять килограмм.</p>
-        <a class="line-trough" href="#">Подробнее</a>
-        <div class="details">
-          <ul>
-            <li>
-              <span class="details-main">8,5 м</span>
-              <span class="details-desc">Длина палки</span>
-            </li>
-            <li>
-              <span class="details-main">5 кг</span>
-              <span class="details-desc">Вес палки</span>
-            </li>
-            <li>
-              <span class="details-main">Карбон</span>
-              <span class="details-desc">Материал</span>
-            </li>
-          </ul>
+    <section class="container slider">
+      <div class="flex-box slide slide-1 active">
+        <div class="half-width image-1">
+          <img src="img/slider-1.png" width="384" height="486" alt="item-1 image">
+        </div>
+        <div class="half-width description-1">
+          <h2>Делай селфи, как Бен Стиллер!</h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего пять килограмм.</p>
+          <a class="line-trough" href="#">Подробнее</a>
+          <div class="details">
+            <ul>
+              <li>
+                <span class="details-main">8,5 м</span>
+                <span class="details-desc">Длина палки</span>
+              </li>
+              <li>
+                <span class="details-main">5 кг</span>
+                <span class="details-desc">Вес палки</span>
+              </li>
+              <li>
+                <span class="details-main">Карбон</span>
+                <span class="details-desc">Материал</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="half-width image-2">
-        <img src="img/slider-2.png" width="345" height="485" alt="item-2 image">
-      </div>
-      <div class="half-width description-2">
-        <h2>Худеем правильно!</h2>
-        <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-        <a class="line-trough" href="#">Подробнее</a>
-        <div class="details">
-          <ul>
-            <li>
-              <span class="details-main">48 часов</span>
-              <span class="details-desc">Без подзарядки</span>
-            </li>
-          </ul>
+      <div class="slide slide-2">
+        <div class="half-width image-2">
+          <img src="img/slider-2.png" width="345" height="485" alt="item-2 image">
+        </div>
+        <div class="half-width description-2">
+          <h2>Худеем правильно!</h2>
+          <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="line-trough" href="#">Подробнее</a>
+          <div class="details">
+            <ul>
+              <li>
+                <span class="details-main">48 часов</span>
+                <span class="details-desc">Без подзарядки</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="half-width image-3">
-        <img src="img/slider-3.png" width="526" height="334" alt="item-3 image">
-      </div>
-      <div class="half-width description-3">
-        <h2>Порхает как бабочка, жалит как пчела!</h2>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <a class="line-trough" href="#">Подробнее</a>
-        <div class="details">
-          <ul>
-            <li>
-              <span class="details-main">800 м</span>
-              <span class="details-desc">Дальность полета</span>
-            </li>
-            <li>
-              <span class="details-main">50 м</span>
-              <span class="details-desc">Дальность</span>
-            </li>
-          </ul>
+      <div class="slide slide-3">
+        <div class="half-width image-3">
+          <img src="img/slider-3.png" width="526" height="334" alt="item-3 image">
+        </div>
+        <div class="half-width description-3">
+          <h2>Порхает как бабочка, жалит как пчела!</h2>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <a class="line-trough" href="#">Подробнее</a>
+          <div class="details">
+            <ul>
+              <li>
+                <span class="details-main">800 м</span>
+                <span class="details-desc">Дальность полета</span>
+              </li>
+              <li>
+                <span class="details-main">50 м</span>
+                <span class="details-desc">Дальность</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
-    <section class="container categories">
+    <section class="container flex-box categories">
       <div class="category">
-        <a href="#"><img src="img/popular-1.png" width="97" height="55" alt="category-1"></a>
+        <div class="img-box">
+          <a href="#"><img src="img/popular-1.png" width="160" height="160" alt="category-1"></a>
+        </div>
         <p>Виртуальная реальность</p>
       </div>
       <div class="category">
-        <a href="#"><img src="img/popular-2.png" width="86" height="117" alt="category-2"></a>
+        <div class="img-box">
+          <a href="#"><img src="img/popular-2.png" width="160" height="160" alt="category-2"></a>
+        </div>
         <p>Моноподы для селфи</p>
       </div>
       <div class="category">
-        <a href="#"><img src="img/popular-3.png" width="71" height="87" alt="category-3"></a>
+        <div class="img-box">
+          <a href="#"><img src="img/popular-3.png" width="160" height="160" alt="category-3"></a>
+        </div>
         <p>Экшн-камеры</p>
       </div>
       <div class="category">
-        <a href="#"><img src="img/popular-4.png" width="107" height="65" alt="category-4"></a>
+        <div class="img-box">
+        <a href="#"><img src="img/popular-4.png" width="160" height="160" alt="category-4"></a>
+        </div>
         <p>Фитнесс браслеты</p>
       </div>
       <div class="category">
-        <a href="#"><img src="img/popular-5.png" width="56" height="98" alt="category-5"></a>
+        <div class="img-box">
+        <a href="#"><img src="img/popular-5.png" width="160" height="160" alt="category-5"></a>
+        </div>
         <p>Умный часы</p>
       </div>
       <div class="category">
-        <a href="#"><img src="img/popular-6.png" width="132" height="69" alt="category-6"></a>
+        <div class="img-box">
+        <a href="#"><img src="img/popular-6.png" width="160" height="160" alt="category-6"></a>
+        </div>
         <p>Квадрокоптеры</p>
       </div>
     </section>
     <section class="services">
-      <div class="container">
-        <label class="service">
-          <input type="radio" name="feauters-item" value="delivery" checked> Доставка
-        </label>
-        <label class="service">
-          <input type="radio" name="feauters-item" value="warranty"> Гарантия
-        </label>
-        <label class="service">
-          <input type="radio" name="feauters-item" value="credit"> Кредит
-        </label>
-        <div class="delivery service-details displayed">
-          <h2>Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      <div class="container flex-box">
+        <div class="services-seleciton">
+          <label class="service">
+            <input type="radio" name="feauters-item" value="delivery" checked> Доставка
+          </label>
+          <label class="service">
+            <input type="radio" name="feauters-item" value="warranty"> Гарантия
+          </label>
+          <label class="service">
+            <input type="radio" name="feauters-item" value="credit"> Кредит
+          </label>
         </div>
-        <div class="warranty service-details">
-          <h2>Гарантия</h2>
-          <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-        </div>
-        <div class="credit service-details">
-          <h2>Кредит</h2>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+        <div class="services-detailes">
+          <div class="delivery service-details active">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          </div>
+          <div class="warranty service-details">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          </div>
+          <div class="credit service-details">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
         </div>
       </div>
     </section>
     <section class="manufactures">
-      <div class="container">
+      <div class="container flex-box">
         <div class="manufacturer">
           <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="manufacturer-1"></a>
         </div>
@@ -169,7 +195,7 @@
         </div>
       </div>
     </section>
-    <section class="company">
+    <section class="container flex-box company">
       <div class="half-width about">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -190,17 +216,17 @@
     </section>
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-top">
+        <div class="flex-box footer-top">
           <div class="logo-footer">
             <img src="img/logo-ft.png" width="163" height="36" alt="device logo">
           </div>
-          <div class="user-panel">
+          <div class="flex-box user-panel-footer">
             <a href="#" class="login">Войти</a>
             <a href="#" class="compare">Срванить</a>
             <a href="#" class="basket">Корзина</a>
           </div>
         </div>
-        <div class="footer-middle">
+        <div class="flex-box footer-middle">
           <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
           </div>
@@ -213,7 +239,7 @@
             <p>Тел.: +7 (495) 495-95-95</p>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="flex-box footer-bottom">
           <div class="social-media">
             <a class="social vk" href="#">VK</a>
             <a class="social fb" href="#">FB</a> <!-- текст внутри ссылок оставлять = хорошая практика -->

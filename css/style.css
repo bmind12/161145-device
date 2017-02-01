@@ -1,10 +1,40 @@
+/*CONFIGURATION*/
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   color: #464646;
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*TITELS*/
 
 h2 {
   color: #000;
@@ -18,4 +48,247 @@ h3 {
   font-family: Gilroy;
   font-size: 16px;
   font-weight: 700;
+}
+
+/*GRID*/
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.half-width {
+  width: 580px;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*HEADER*/
+
+.main-header {
+  padding: 42px 60px 0;
+  margin-top: 40px;
+  margin-bottom: 45px;
+  background-color: #ffe27f;
+  min-height: 186px;
+}
+
+.main-header .flex-box {
+  margin-bottom: 35px;
+}
+
+.user-panel-header,
+.navigation {
+  display: flex;
+}
+
+.user-panel-header .login {
+  margin-right: auto;
+}
+
+.user-panel-header .compare,
+.navigation .delivery
+{
+  margin-right: 30px;
+}
+
+.navigation .contacts {
+  margin-left: auto;
+}
+
+.logo-header {
+  position: absolute;
+  top: 20px;
+}
+
+.hidden-sections {
+  display: none;
+}
+
+/*SLIDER*/
+
+.slider {
+  padding: 0 80px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.slider:before {
+  position: absolute;
+  top: -45px;
+  left: 0px;
+  background-color: #ffe27f;
+  content: '';
+  width: 1160px;
+  height: 114px;
+  z-index: -1;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: flex;
+}
+
+/*CATEGORIES*/
+
+.categories {
+  margin-bottom: 70px;
+}
+
+.category {
+  width: 160px;
+}
+
+.img-box{
+  width: 160px;
+  height: 160px;
+  background-color: #ffe27f;
+}
+
+/*SERVECES*/
+
+.services {
+  margin-bottom: 94px;
+  min-height: 287px;
+  background-color: #e6e6e6;
+}
+
+.services-seleciton {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin-right: 120px;
+}
+
+.service-details {
+  display: none;
+}
+
+.service-details.active {
+  display: block;
+}
+
+.service-details h2 {
+  margin: 0;
+}
+
+/*MANUFACTURER*/
+
+.manufactures {
+  margin-bottom: 100px;
+}
+
+/*COMPANY*/
+
+.company {
+  margin-bottom: 140px;
+}
+
+.company h2 {
+  margin-bottom: 53px;
+}
+
+.company p {
+  margin-bottom: 35px;
+}
+
+.company .about {
+  width: 460px;
+}
+
+/*NAVIGATION STORE*/
+
+.navigation-store h1 {
+  margin-bottom: 35px;
+}
+
+/*CATALOGUE*/
+
+.catalogue-left {
+  width: 268px;
+  padding-right: 68px;
+}
+
+.catalogue-right {
+  width: 760px;
+  flex-grow: 1;
+  padding-left: 72px;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*FOOTER*/
+
+.main-footer {
+  color: #fff;
+}
+
+.main-footer {
+  background-color: #444;
+  min-height: 323px;
+  padding-top: 60px;
+}
+
+.user-panel-footer {
+  width: 360px;
+  justify-content: flex-end;
+}
+
+.user-panel-footer a {
+  margin-left: 50px;
+}
+
+.address {
+  width: 260px;
+}
+
+.telephone {
+  text-align: right;
+  width: 260px;
+}
+
+.navigation-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+}
+
+.footer-bottom:before {
+  content: "";
+  /*display: block;*/
+  width: 10px;
+}
+
+.social-media {
+  width: 160px;
+}
+
+/*CONTACT FORM*/
+
+.write-us {
+  width: 960px;
+  height: 555px;
+  margin: 0 auto;
+  padding: 100px 100px 0;
+}
+
+.form-half-width {
+  width: 360px;
+  margin: 20px;
+  display: inline-block;
 }

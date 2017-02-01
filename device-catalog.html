@@ -6,39 +6,43 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container main-header">
-      <div class="logo-header">
-        <img src="img/logo.png" width="163" height="36" alt="device logo">
-      </div>
-      <div class="half-width search">
-        <form action="/echo" method="post">
-          <button type="button" name="search"></button>
-          <input type="text" placeholder="Поиск по сайту">
-        </form>
-      </div>
-      <div class="half-width user-panel">
-        <a href="#" class="login">Войти</a>
-        <a href="#" class="compare">Срванить</a>
-        <a href="#" class="basket">Корзина</a>
-      </div>
-      <nav main-navigation>
-        <div class="half-width catalogue">
-          <a href="#">Каталог товаров</a>
-          <div class="hidden-categories">
-            <a href="#">Виртуальная реальность</a>
-            <a href="#">Моноподы для селфи</a>
-            <a href="#">Экшн-камеры</a>
-            <a href="#">Фитнесс-браслеты</a>
-            <a href="#">Умные часы</a>
-            <a href="#">Квадрокоптеры</a>
+    <header class="container">
+      <div class="main-header">
+        <div class="logo-header">
+          <img src="img/logo.png" width="163" height="36" alt="device logo">
+        </div>
+        <div class="flex-box">
+          <div class="half-width search">
+            <form action="/echo" method="post">
+              <button type="button" name="search"></button>
+              <input type="text" placeholder="Поиск по сайту">
+            </form>
+          </div>
+          <div class="half-width user-panel-header">
+            <a href="#" class="login">Войти</a>
+            <a href="#" class="compare">Срванить</a>
+            <a href="#" class="basket">Корзина</a>
           </div>
         </div>
-        <div class="half-width navigation">
-          <a href="#" class="delivery">Доставка</a>
-          <a href="#" class="garanty">Гарантия</a>
-          <a href="#" class="contacts">Контакты</a>
-        </div>
-      </nav>
+        <nav class="flex-box main-navigation">
+          <div class="half-width sections">
+            <a href="#">Каталог товаров</a>
+            <!--<div class="hidden-sections">-->
+              <!--<a href="#">Виртуальная реальность</a>-->
+              <!--<a href="#">Моноподы для селфи</a>-->
+              <!--<a href="#">Экшн-камеры</a>-->
+              <!--<a href="#">Фитнесс-браслеты</a>-->
+              <!--<a href="#">Умные часы</a>-->
+              <!--<a href="#">Квадрокоптеры</a>-->
+            <!--</div>-->
+          </div>
+          <div class="half-width navigation">
+            <a href="#" class="delivery">Доставка</a>
+            <a href="#" class="warranty">Гарантия</a>
+            <a href="#" class="contacts">Контакты</a>
+          </div>
+        </nav>
+      </div>
     </header>
     <section class="navigation-store">
       <div class="container">
@@ -50,13 +54,9 @@
         </ul>
       </div>
     </section>
-    <div class="catalogue-left-head">
-      <div class="catalogue-left">
-        <h2 class="filter-title">Фильтр:</h2>
-      </div>
-    </div>
-    <div class="catalog-left-body">
+    <div class="container flex-box">
       <div class="catalogue-left filter">
+        <h2 class="filter-title">Фильтр:</h2>
         <form action="/echo" method="get">
           <fieldset>
             <legend>Стоимость</legend>
@@ -99,75 +99,75 @@
           <button class="line-trough" type="submit">Показать</button>
         </form>
       </div>
-    </div>
-    <div class="catalogue-right-top">
-      <div class="catalogue-right sorting">
-        <h2>Сортировка:</h2>
-        <ul>
-          <li><a class="price active" href="#">По цене</a></li>
-          <li><a class="type" href="#">По типу</a></li>
-          <li><a class="popularity" href="#">По популярности</a></li> <!--ссылки в js отменяется = переход-->
-        </ul>
-        <a class="sort-arrow asc active" href="#"></a>
-        <a class="sort-arrow desc" href="#"></a>
-      </div>
-      <div class="catalogue-right items">
-        <article class="item">
-          <img src="img/item-1.jpg" width="360" height="380" alt="item-1">
-          <h3>
-            <a class="item-name" href="#">Любительская селфи-палка</a>
-          </h3>
-          <span class="item-price">500 руб.</span>
-        </article>
-        <article class="item">
-          <img src="img/item-2.jpg" width="360" height="380" alt="item-2">
-          <h3>
-            <a class="item-name" href="#">Профессиональная селфи-палка </a>
-          </h3>
-          <span class="item-price">1 500 руб.</span>
-        </article>
-        <article class="item">
-          <img src="img/item-3.jpg" width="360" height="380" alt="item-3">
-          <h3>
-            <a class="item-name" href="#">Непотопляемая селфи-палка</a>
-          </h3>
-          <span class="item-price">2 500 руб.</span>
-        </article>
-        <article class="item item-new">
-          <img src="img/item-4.jpg" width="360" height="380" alt="item-4">
-          <h3>
-            <a class="item-name" href="#">Селфи-палка «Следуй за мной»</a>
-          </h3>
-          <span class="item-price">4 900 руб.</span>
-        </article>
-      </div>
-      <div class="pages">
-        <a href="#" class="prev">Назад</a>
-        <ul>
-          <li><a class="disabled">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-        </ul>
-        <a href="#" class="next">Вперед</a>
+      <div class="catalogue-right">
+        <div class="catalogue-right-head sorting">
+          <h2>Сортировка:</h2>
+          <ul>
+            <li><a class="price active" href="#">По цене</a></li>
+            <li><a class="type" href="#">По типу</a></li>
+            <li><a class="popularity" href="#">По популярности</a></li> <!--ссылки в js отменяется = переход-->
+          </ul>
+          <a class="sort-arrow asc active" href="#"></a>
+          <a class="sort-arrow desc" href="#"></a>
+        </div>
+        <div class="catalogue-right-body items">
+          <article class="item">
+            <img src="img/item-1.jpg" width="360" height="380" alt="item-1">
+            <h3>
+              <a class="item-name" href="#">Любительская селфи-палка</a>
+            </h3>
+            <span class="item-price">500 руб.</span>
+          </article>
+          <article class="item">
+            <img src="img/item-2.jpg" width="360" height="380" alt="item-2">
+            <h3>
+              <a class="item-name" href="#">Профессиональная селфи-палка </a>
+            </h3>
+            <span class="item-price">1 500 руб.</span>
+          </article>
+          <article class="item">
+            <img src="img/item-3.jpg" width="360" height="380" alt="item-3">
+            <h3>
+              <a class="item-name" href="#">Непотопляемая селфи-палка</a>
+            </h3>
+            <span class="item-price">2 500 руб.</span>
+          </article>
+          <article class="item item-new">
+            <img src="img/item-4.jpg" width="360" height="380" alt="item-4">|
+            <h3>
+              <a class="item-name" href="#">Селфи-палка «Следуй за мной»</a>
+            </h3>
+            <span class="item-price">4 900 руб.</span>
+          </article>
+        </div>
+        <div class="pages">
+          <a href="#" class="prev">Назад</a>
+          <ul>
+            <li><a class="disabled">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+          <a href="#" class="next">Вперед</a>
+        </div>
       </div>
     </div>
     <footer class="main-footer">
       <div class="container">
-        <div class="footer-top">
+        <div class="flex-box footer-top">
           <div class="logo-footer">
             <img src="img/logo-ft.png" width="163" height="36" alt="device logo">
           </div>
-          <div class="user-panel">
+          <div class="flex-box user-panel-footer">
             <a href="#" class="login">Войти</a>
             <a href="#" class="compare">Срванить</a>
             <a href="#" class="basket">Корзина</a>
           </div>
         </div>
-        <div class="footer-middle">
+        <div class="flex-box footer-middle">
           <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
           </div>
-          <div class="navigation">
+          <div class="navigation-footer">
             <a href="#">Доставка</a>
             <a href="#">Гарантия</a>
             <a href="#">Контакты</a>
@@ -176,7 +176,7 @@
             <p>Тел.: +7 (495) 495-95-95</p>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="flex-box footer-bottom">
           <div class="social-media">
             <a class="social vk" href="#">VK</a>
             <a class="social fb" href="#">FB</a> <!-- текст внутри ссылок оставлять = хорошая практика -->
