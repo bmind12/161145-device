@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -10,16 +11,16 @@
     <header class="container">
       <div class="main-header">
         <div class="logo-header">
-          <img src="img/logo.png" width="163" height="36" alt="device logo">
+          <a>DEVICE</a>
         </div>
         <div class="flex-box search-user-panel">
           <div class="half-width search">
             <form action="/echo" method="post">
-              <button type="button" name="search"></button>
               <input type="text" placeholder="Поиск по сайту">
+              <button class="search-btn" type="button" name="search">Найти</button>
             </form>
           </div>
-          <div class="half-width user-panel-header displayed">
+          <div class="half-width flex-box user-panel-header displayed">
             <a href="#" class="login">Войти</a>
             <a href="#" class="compare">Срванить</a>
             <a href="#" class="basket">Корзина</a>
@@ -27,20 +28,26 @@
         </div>
         <nav class="flex-box main-navigation">
           <div class="half-width sections">
-            <a href="#">Каталог товаров</a>
-            <div class="hidden-sections">
-              <a href="#">Виртуальная реальность</a>
-              <a href="#">Моноподы для селфи</a>
-              <a href="#">Экшн-камеры</a>
-              <a href="#">Фитнесс-браслеты</a>
-              <a href="#">Умные часы</a>
-              <a href="#">Квадрокоптеры</a>
+            <a class="sections-trigger" href="#">Каталог товаров</a>
+            <div class="flex-box hidden-sections">
+              <div class="sections-col flex-box">
+                <a href="#">Виртуальная реальность</a>
+                <a href="#">Моноподы для селфи</a>
+                <a href="#">Экшн-камеры</a>
+              </div>
+              <div class="sections-col flex-box">
+                <a href="#">Фитнесс-браслеты</a>
+                <a href="#">Умные часы</a>
+              </div>
+              <div class="sections-col flex-box">
+                <a href="#">Квадрокоптеры</a>
+              </div>
             </div>
           </div>
-          <div class="half-width navigation">
-            <a href="#" class="btn delivery">Доставка</a>
-            <a href="#" class="btn warranty">Гарантия</a>
-            <a href="#" class="btn contacts">Контакты</a>
+          <div class="half-width flex-box navigation">
+            <a href="#" class="delivery">Доставка</a>
+            <a href="#" class="warranty">Гарантия</a>
+            <a href="#" class="contacts">Контакты</a>
           </div>
         </nav>
       </div>
@@ -54,44 +61,51 @@
           <h2>Делай селфи, <br>
               как Бен Стиллер!</h2>
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
-          <a class="btn" href="#">Подробнее</a>
-          <div class="details">
-            <ul class="flex-box">
-              <li class="detail">
-                <span class="details-main">8,5 м</span>
-                <span class="details-desc">Длина палки</span>
-              </li>
-              <li class="detail">
-                <span class="details-main">5 кг</span>
-                <span class="details-desc">Вес палки</span>
-              </li>
-              <li class="detail">
-                <span class="details-main">Карбон</span>
-                <span class="details-desc">Материал</span>
-              </li>
-            </ul>
+          <div class="flex-box">
+            <a class="btn" href="#">Подробнее</a>
+            <div class="flex-box slider-toggles">
+              <input type="radio" name="toggle" id="slide-1" value="slide-1" checked>
+              <label class="toggle" for="slide-1">Slider-1</label>
+              <input type="radio" name="toggle" id="slide-2" value="slide-2">
+              <label class="toggle" for="slide-2">Slider-2</label>
+              <input type="radio" name="toggle" id="slide-3" value="slide-3">
+              <label class="toggle" for="slide-3">Slider-3</label>
+            </div>
           </div>
+          <ul class="details-list flex-box">
+            <li class="detail">
+              <span class="details-main">8,5 м</span>
+              <span class="details-desc">Длина палки</span>
+            </li>
+            <li class="detail">
+              <span class="details-main">5 кг</span>
+              <span class="details-desc">Вес палки</span>
+            </li>
+            <li class="detail">
+              <span class="details-main">Карбон</span>
+              <span class="details-desc">Материал</span>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="slide slide-2">
+      <div class="flex-box slide slide-2">
         <div class="half-width image-2">
           <img src="img/slider-2.png" width="345" height="485" alt="item-2 image">
         </div>
         <div class="half-width description description-2">
-          <h2>Худеем правильно!</h2>
+          <h2>Худеем <br>
+              правильно!</h2>
           <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a class="btn" href="#">Подробнее</a>
-          <div class="details">
-            <ul>
-              <li>
-                <span class="details-main">48 часов</span>
-                <span class="details-desc">Без подзарядки</span>
-              </li>
-            </ul>
-          </div>
+          <ul class="details-list flex-box">
+            <li class="detail">
+              <span class="details-main">48 часов</span>
+              <span class="details-desc">Без подзарядки</span>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="slide slide-3">
+      <div class="flex-box slide slide-3">
         <div class="half-width image-3">
           <img src="img/slider-3.png" width="526" height="334" alt="item-3 image">
         </div>
@@ -99,71 +113,78 @@
           <h2>Порхает как бабочка, жалит как пчела!</h2>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="btn" href="#">Подробнее</a>
-          <div class="details">
-            <ul>
-              <li>
-                <span class="details-main">800 м</span>
-                <span class="details-desc">Дальность полета</span>
-              </li>
-              <li>
-                <span class="details-main">50 м</span>
-                <span class="details-desc">Дальность</span>
-              </li>
-            </ul>
-          </div>
+          <ul class="details-list flex-box">
+            <li class="detail">
+              <span class="details-main">800 м</span>
+              <span class="details-desc">Дальность полета</span>
+            </li>
+            <li class="detail">
+              <span class="details-main">50 м</span>
+              <span class="details-desc">Дальность</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <section class="container flex-box categories">
       <div class="category">
-        <div class="img-box">
-          <a href="#"><img src="img/popular-1.png" width="160" height="160" alt="category-1"></a>
-        </div>
-        <p>Виртуальная реальность</p>
+        <a href="#">
+          <div class="img-box">
+            <img src="img/popular-1.png" width="160" height="160" alt="category-1">
+          </div>
+          <p>Виртуальная реальность</p>
+        </a>
       </div>
       <div class="category">
-        <div class="img-box">
-          <a href="#"><img src="img/popular-2.png" width="160" height="160" alt="category-2"></a>
-        </div>
-        <p>Моноподы для селфи</p>
+        <a href="#">
+          <div class="img-box">
+            <img src="img/popular-2.png" width="160" height="160" alt="category-2">
+          </div>
+          <p>Моноподы для селфи</p>
+        </a>
       </div>
       <div class="category">
-        <div class="img-box">
-          <a href="#"><img src="img/popular-3.png" width="160" height="160" alt="category1-3"></a>
-        </div>
-        <p>Экшн-камеры</p>
+        <a href="#">
+          <div class="img-box">
+            <img src="img/popular-3.png" width="160" height="160" alt="category1-3">
+          </div>
+          <p>Экшн-камеры</p>
+        </a>
       </div>
       <div class="category">
-        <div class="img-box">
-        <a href="#"><img src="img/popular-4.png" width="160" height="160" alt="category-4"></a>
-        </div>
-        <p>Фитнесс браслеты</p>
+        <a href="#">
+          <div class="img-box">
+            <img src="img/popular-4.png" width="160" height="160" alt="category-4">
+          </div>
+          <p>Фитнесс браслеты</p>
+        </a>
       </div>
       <div class="category">
-        <div class="img-box">
-        <a href="#"><img src="img/popular-5.png" width="160" height="160" alt="category-5"></a>
-        </div>
-        <p>Умный часы</p>
+        <a href="#">
+          <div class="img-box">
+            <img src="img/popular-5.png" width="160" height="160" alt="category-5">
+          </div>
+          <p>Умный часы</p>
+        </a>
       </div>
       <div class="category">
-        <div class="img-box">
-        <a href="#"><img src="img/popular-6.png" width="160" height="160" alt="category-6"></a>
-        </div>
-        <p>Квадрокоптеры</p>
+        <a href="#">
+          <div class="img-box">
+            <img src="img/popular-6.png" width="160" height="160" alt="category-6">
+          </div>
+          <p>Квадрокоптеры</p>
+        </a>
       </div>
     </section>
     <section class="services">
       <div class="container flex-box">
         <div class="services-seleciton">
-          <label class="service">
-            <input type="radio" name="feauters-item" value="delivery" checked> Доставка
-          </label>
-          <label class="service">
-            <input type="radio" name="feauters-item" value="warranty"> Гарантия
-          </label>
-          <label class="service">
-            <input type="radio" name="feauters-item" value="credit"> Кредит
-          </label>
+          <input type="radio" name="feauters-item" id="delivery" value="delivery" checked>
+          <label class="service btn" for="delivery">Доставка</label>
+          <input type="radio" name="feauters-item" id="warranty" value="warranty">
+          <label class="service btn" for="warranty">Гарантия</label>
+          <input type="radio" name="feauters-item" id="credit" value="credit">
+          <label class="service btn" for="credit">Кредит</label>
         </div>
         <div class="services-detailes">
           <div class="delivery service-details active">
@@ -172,7 +193,7 @@
           </div>
           <div class="warranty service-details">
             <h2>Гарантия</h2>
-            <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
           </div>
           <div class="credit service-details">
             <h2>Кредит</h2>
@@ -183,16 +204,16 @@
     </section>
     <section class="manufactures">
       <div class="container flex-box">
-        <div class="manufacturer">
+        <div class="manufacturer manufacturer-1">
           <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="manufacturer-1"></a>
         </div>
-        <div class="manufacturer">
+        <div class="manufacturer manufacturer-2">
           <a href="#"><img src="img/logo-2.png" width="260" height="100" alt="manufacturer-2"></a>
         </div>
-        <div class="manufacturer">
+        <div class="manufacturer manufacturer-3">
           <a href="#"><img src="img/logo-3.png" width="260" height="100" alt="manufacturer-3"></a>
         </div>
-        <div class="manufacturer">
+        <div class="manufacturer manufacturer-4">
           <a href="#"><img src="img/logo-4.png" width="260" height="100" alt="manufacturer-4"></a>
         </div>
       </div>
@@ -202,7 +223,7 @@
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-        <ul>
+        <ul class="partners-list">
           <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
@@ -212,15 +233,15 @@
       <div class="half-width contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map.jpg" alt="location map" width="560" height="222">
-        <a class="btn" href="#">Напишите нам</a>
+        <img class="map js-open-map" src="img/map.jpg" alt="location map" width="560" height="222">
+        <a class="btn write-us" href="#">Напишите нам</a>
       </div>
     </section>
     <footer class="main-footer">
       <div class="container">
         <div class="flex-box footer-top">
           <div class="logo-footer">
-            <img src="img/logo-ft.png" width="163" height="36" alt="device logo">
+            <a>DEVICE</a>
           </div>
           <div class="flex-box user-panel-footer">
             <a href="#" class="login">Войти</a>
@@ -232,7 +253,7 @@
           <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
           </div>
-          <div class="navigation">
+          <div class="flex-box footer-navigation">
             <a href="#">Доставка</a>
             <a href="#">Гарантия</a>
             <a href="#">Контакты</a>
@@ -243,9 +264,9 @@
         </div>
         <div class="flex-box footer-bottom">
           <div class="social-media">
-            <a class="social vk" href="#">VK</a>
-            <a class="social fb" href="#">FB</a> <!-- текст внутри ссылок оставлять = хорошая практика -->
-            <a class="social insta" href="#">Instagram</a>
+            <a class="social vk" href="#"><img src="img/facebook-svg-copy.png" alt="Facebook">Facebook</a>
+            <a class="social fb" href="#"><img src="img/insta-svg-copy.png" alt="Instagram">Instagram</a> <!-- текст внутри ссылок оставлять = хорошая практика -->
+            <a class="social insta" href="#"><img src="img/twitter-svg-copy.png" alt="Twitter">Twi  tter</a>
           </div>
           <div class="web-developer">
             <a href="#"><img src="img/htmlacademy-still.png" width="27" height="34" alt="html academy logo"></a>
@@ -253,20 +274,31 @@
         </div>
       </div>
     </footer>
-    <div class="write-us">
-      <form action="/echo" method="post">
-        <div class="form-half-width">
-          <label for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+    <div class="modal-write-us">
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="contact-form" action="/echo" method="post">
+        <div class="flex-box user-details">
+          <div class="user-name">
+            <label>Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
+          </div>
+          <div class="user-email">
+            <label>Ваш email:</label>
+            <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
+          </div>
         </div>
-        <div class="form-half-width">
-          <label for="email">Ваш email:</label>
-          <input id="email" type="email" name="email" placeholder="Для отправки ответа">
+        <div class="user-message">
+          <label>Текст письма</label>
+          <textarea id="message" name="message" placeholder="В свободной форме" required></textarea>
         </div>
-        <label for="message">Текст письма</label>
-        <input id="message" type="text" name="message" placeholder="В свободной форме">
-        <button class="btn" type="button" name="send">Отправить</button>
+        <button class="btn" type="submit" name="send">Отправить</button>
       </form>
     </div>
+    <div class="modal-map">
+      <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.52742931639706!3d55.68703098053579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2scz!4v1487048864063" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="modal-overlay"></div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
