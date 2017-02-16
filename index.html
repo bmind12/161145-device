@@ -14,20 +14,20 @@
           <a>DEVICE</a>
         </div>
         <div class="flex-box search-user-panel">
-          <div class="half-width search">
+          <div class="search">
             <form action="/echo" method="post">
               <input type="text" placeholder="Поиск по сайту">
               <button class="search-btn" type="button" name="search">Найти</button>
             </form>
           </div>
-          <div class="half-width flex-box user-panel-header displayed">
+          <div class="flex-box user-panel-header displayed">
             <a href="#" class="login">Войти</a>
             <a href="#" class="compare">Срванить</a>
             <a href="#" class="basket">Корзина</a>
           </div>
         </div>
         <nav class="flex-box main-navigation">
-          <div class="half-width sections">
+          <div class="sections">
             <a class="sections-trigger" href="#">Каталог товаров</a>
             <div class="flex-box hidden-sections">
               <div class="sections-col flex-box">
@@ -44,34 +44,32 @@
               </div>
             </div>
           </div>
-          <div class="half-width flex-box navigation">
-            <a href="#" class="delivery">Доставка</a>
-            <a href="#" class="warranty">Гарантия</a>
-            <a href="#" class="contacts">Контакты</a>
+          <div class="flex-box navigation">
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Контакты</a>
           </div>
         </nav>
       </div>
     </header>
     <section class="container slider">
-      <div class="flex-box slide slide-1 active">
-        <div class="half-width image-1">
+      <input type="radio" name="toggle" id="btn-slide-1" value="slide-1" checked>
+      <input type="radio" name="toggle" id="btn-slide-2" value="slide-2">
+      <input type="radio" name="toggle" id="btn-slide-3" value="slide-3">
+      <div class="flex-box slider-toggles">
+        <label class="toggle" for="btn-slide-1">Slider-1</label>
+        <label class="toggle" for="btn-slide-2">Slider-2</label>
+        <label class="toggle" for="btn-slide-3">Slider-3</label>
+      </div>
+      <div class="flex-box slide slide-1">
+        <div class="slide-image image-1">
           <img src="img/slider-1.png" width="384" height="486" alt="item-1 image">
         </div>
-        <div class="half-width description description-1">
+        <div class="slide-description description-1">
           <h2>Делай селфи, <br>
               как Бен Стиллер!</h2>
-          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длинной и весом всего 5 килограмм.</p>
-          <div class="flex-box">
-            <a class="btn" href="#">Подробнее</a>
-            <div class="flex-box slider-toggles">
-              <input type="radio" name="toggle" id="slide-1" value="slide-1" checked>
-              <label class="toggle" for="slide-1">Slider-1</label>
-              <input type="radio" name="toggle" id="slide-2" value="slide-2">
-              <label class="toggle" for="slide-2">Slider-2</label>
-              <input type="radio" name="toggle" id="slide-3" value="slide-3">
-              <label class="toggle" for="slide-3">Slider-3</label>
-            </div>
-          </div>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <a class="btn" href="#">Подробнее</a>
           <ul class="details-list flex-box">
             <li class="detail">
               <span class="details-main">8,5 м</span>
@@ -89,10 +87,10 @@
         </div>
       </div>
       <div class="flex-box slide slide-2">
-        <div class="half-width image-2">
+        <div class="slide-image image-2">
           <img src="img/slider-2.png" width="345" height="485" alt="item-2 image">
         </div>
-        <div class="half-width description description-2">
+        <div class="slide-description description-2">
           <h2>Худеем <br>
               правильно!</h2>
           <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -106,12 +104,12 @@
         </div>
       </div>
       <div class="flex-box slide slide-3">
-        <div class="half-width image-3">
+        <div class="slide-image image-3">
           <img src="img/slider-3.png" width="526" height="334" alt="item-3 image">
         </div>
-        <div class="half-width description description-3">
+        <div class="slide-description description-3">
           <h2>Порхает как бабочка, жалит как пчела!</h2>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="btn" href="#">Подробнее</a>
           <ul class="details-list flex-box">
             <li class="detail">
@@ -120,7 +118,7 @@
             </li>
             <li class="detail">
               <span class="details-main">50 м</span>
-              <span class="details-desc">Дальность</span>
+              <span class="details-desc">Радиус поражения</span>
             </li>
           </ul>
         </div>
@@ -178,16 +176,16 @@
     </section>
     <section class="services">
       <div class="container flex-box">
+        <input type="radio" name="feauters-item" id="btn-delivery" value="delivery" checked>
+        <input type="radio" name="feauters-item" id="btn-warranty" value="warranty">
+        <input type="radio" name="feauters-item" id="btn-credit" value="credit">
         <div class="services-seleciton">
-          <input type="radio" name="feauters-item" id="delivery" value="delivery" checked>
-          <label class="service btn" for="delivery">Доставка</label>
-          <input type="radio" name="feauters-item" id="warranty" value="warranty">
-          <label class="service btn" for="warranty">Гарантия</label>
-          <input type="radio" name="feauters-item" id="credit" value="credit">
-          <label class="service btn" for="credit">Кредит</label>
+          <label class="service btn" for="btn-delivery">Доставка</label>
+          <label class="service btn" for="btn-warranty">Гарантия</label>
+          <label class="service btn" for="btn-credit">Кредит</label>
         </div>
         <div class="services-detailes">
-          <div class="delivery service-details active">
+          <div class="delivery service-details">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
@@ -219,7 +217,7 @@
       </div>
     </section>
     <section class="container flex-box company">
-      <div class="half-width about">
+      <div class="about">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -230,7 +228,7 @@
         </ul>
         <a class="btn" href="#">Подробнее о нас</a>
       </div>
-      <div class="half-width contacts">
+      <div class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img class="map js-open-map" src="img/map.jpg" alt="location map" width="560" height="222">

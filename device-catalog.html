@@ -65,9 +65,19 @@
       <div class="catalogue-left filter">
         <h2 class="catalogue-title">Фильтр:</h2>
         <form class="filter-form" action="/echo" method="get">
-          <fieldset>
+          <fieldset class="filter-price">
             <legend>Стоимость</legend>
-            <input type="range" name="price" min="0" max="50000">
+            <div class="range-contrlos">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle min-toggle"></div>
+              <div class="range-toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+              от <input class="min-price" type="text" value="0" disabled>
+              до <input class="max-price" type="text" value="5000" disabled>
+            </div>
           </fieldset>
           <fieldset class="filter-color">
             <legend>Цвет</legend>
@@ -99,7 +109,7 @@
           </fieldset>
           <fieldset class="filter-bluetooth">
             <legend>Bluetooth</legend>
-            <input type="radio" id="true" name="bluetooth" value="TRUE">
+            <input type="radio" id="true" name="bluetooth" value="TRUE" checked>
             <label for="true">
               <span class="radio-indicator"></span>
               Есть
@@ -126,8 +136,8 @@
             <a class="arrow-down active" href="#">Сортировать по-убыванию</a>
           </div>
         </div>
-        <div class="items">
-          <article class="flex-box item">
+        <div class="items flex-box">
+          <article class="item">
             <div class="item-img">
               <img src="img/item-1.jpg" width="360" height="380" alt="item-1">
               <div class="item-hover">
@@ -140,7 +150,7 @@
             </h3>
             <span class="item-price">500 руб.</span>
           </article>
-          <article class="flex-box item">
+          <article class="item">
             <div class="item-img">
               <img src="img/item-2.jpg" width="360" height="380" alt="item-2">
               <div class="item-hover">
@@ -153,7 +163,7 @@
             </h3>
             <span class="item-price">1 500 руб.</span>
           </article>
-          <article class="flex-box item">
+          <article class="item">
             <div class="item-img">
               <img src="img/item-3.jpg" width="360" height="380" alt="item-3">
               <div class="item-hover">
@@ -166,7 +176,7 @@
             </h3>
             <span class="item-price">2 500 руб.</span>
           </article>
-          <article class="flex-box item item-new">
+          <article class="item item-new">
             <div class="item-img">
               <img src="img/item-4.jpg" width="360" height="380" alt="item-4">
               <div class="item-hover">
