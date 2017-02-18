@@ -15,15 +15,19 @@
         </div>
         <div class="flex-box search-user-panel">
           <div class="search">
-            <form action="/echo" method="post">
+            <form action="/echo" method="get">
               <input type="text" placeholder="Поиск по сайту">
-              <button class="search-btn" type="button" name="search">Найти</button>
+              <button class="search-btn" type="submit" name="search">Найти</button>
             </form>
           </div>
-          <div class="flex-box user-panel-header displayed">
-            <a href="#" class="login">Войти</a>
-            <a href="#" class="compare">Срванить</a>
-            <a href="#" class="basket">Корзина</a>
+          <div class="flex-box user-panel-header">
+            <div class="left-panel">
+              <a href="#" class="login">Войти</a>
+            </div>
+            <div class="right-panel">
+              <a href="#" class="compare">Срванить</a>
+              <a href="#" class="basket">Корзина</a>
+            </div>
           </div>
         </div>
         <nav class="flex-box main-navigation">
@@ -241,17 +245,17 @@
           <div class="logo-footer">
             <a>DEVICE</a>
           </div>
-          <div class="flex-box user-panel-footer">
-            <a href="#" class="login">Войти</a>
-            <a href="#" class="compare">Срванить</a>
+          <div class="user-panel-footer clearfix">
             <a href="#" class="basket">Корзина</a>
+            <a href="#" class="compare">Срванить</a>
+            <a href="#" class="login">Войти</a>
           </div>
         </div>
         <div class="flex-box footer-middle">
           <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
           </div>
-          <div class="flex-box footer-navigation">
+          <div class="footer-navigation clearfix">
             <a href="#">Доставка</a>
             <a href="#">Гарантия</a>
             <a href="#">Контакты</a>
@@ -263,11 +267,11 @@
         <div class="flex-box footer-bottom">
           <div class="social-media">
             <a class="social vk" href="#"><img src="img/facebook-svg-copy.png" alt="Facebook">Facebook</a>
-            <a class="social fb" href="#"><img src="img/insta-svg-copy.png" alt="Instagram">Instagram</a> <!-- текст внутри ссылок оставлять = хорошая практика -->
-            <a class="social insta" href="#"><img src="img/twitter-svg-copy.png" alt="Twitter">Twi  tter</a>
+            <a class="social fb" href="#"><img src="img/insta-svg-copy.png" alt="Instagram">Instagram</a>
+            <a class="social insta" href="#"><img src="img/twitter-svg-copy.png" alt="Twitter">Twitter</a>
           </div>
           <div class="web-developer">
-            <a href="#"><img src="img/htmlacademy-still.png" width="27" height="34" alt="html academy logo"></a>
+            <a href="https://htmlacademy.ru/"><img src="img/htmlacademy-still.png" width="27" height="34" alt="html academy logo">HTML Academy</a>
           </div>
         </div>
       </div>
