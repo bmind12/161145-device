@@ -2,42 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>DEVICE: Моноподы для селфи</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
-      <div class="main-header">
+    <div class="container">
+      <header class="main-header">
         <div class="logo-header">
           <a href="index.html">DEVICE</a>
         </div>
-        <div class="flex-box search-user-panel">
-          <div class="search">
-            <form action="/echo" method="get">
-              <input type="text" placeholder="Поиск по сайту">
-              <button class="search-btn" type="submit" name="search">Найти</button>
-            </form>
-          </div>
-          <div class="flex-box user-panel-header">
-            <div class="left-panel">
-              <a href="#" class="login">Валентин Петухов</a>
+        <div class="search-user-panel flex-box">
+          <form class="search" action="/echo" method="post">
+            <input type="text" placeholder="Поиск по сайту">
+            <button class="search-btn" type="submit" name="search">Найти</button>
+          </form>
+          <div class="user-panel-header flex-box">
+            <div class="left-user-panel">
+              <a href="#" class="user">Валентин Петухов</a>
               <a href="#" class="logout">Выйти</a>
             </div>
-            <div class="right-panel">
+            <div class="right-user-panel">
               <a href="#" class="compare">Срванить</a>
-              <a href="#" class="basket">Корзина</a>
+              <a href="#" class="cart">Корзина</a>
             </div>
           </div>
         </div>
-        <nav class="flex-box main-navigation">
+        <nav class="main-navigation flex-box">
           <div class="sections">
             <a class="sections-trigger" href="#">Каталог товаров</a>
-            <div class="flex-box hidden-sections">
+            <div class="hidden-sections flex-box">
               <div class="sections-col flex-box">
                 <a href="#">Виртуальная реальность</a>
-                <a href="#">Моноподы для селфи</a>
+                <a>Моноподы для селфи</a>
                 <a href="#">Экшн-камеры</a>
               </div>
               <div class="sections-col flex-box">
@@ -49,20 +47,20 @@
               </div>
             </div>
           </div>
-          <div class="flex-box navigation">
+          <div class="navigation flex-box">
             <a href="#" class="delivery">Доставка</a>
             <a href="#" class="warranty">Гарантия</a>
             <a href="#" class="contacts">Контакты</a>
           </div>
         </nav>
-      </div>
-    </header>
-    <section class="container navigation-store">
+      </header>
+    </div>
+    <section class="navigation-store container">
       <h1>Моноподы для селфи</h1>
       <ul class="navigation-list flex-box">
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Каталог товаров</a></li>
-        <li><a>Моноподы для селфи</a></li>
+        <li class="navigation-list-item"><a href="index.html">Главная</a></li>
+        <li class="navigation-list-item"><a href="#">Каталог товаров</a></li>
+        <li class="navigation-list-item"><a>Моноподы для селфи</a></li>
       </ul>
     </section>
     <div class="items-catalogue">
@@ -86,27 +84,27 @@
             </fieldset>
             <fieldset class="filter-color">
               <legend>Цвет</legend>
-              <input type="checkbox" id="black" name="color" value="black" checked>
+              <input class="filter-color-input" type="checkbox" id="black" name="color" value="black" checked>
               <label for="black">
                 <span class="checkbox-indicator"></span>
                 Черный
               </label>
-              <input type="checkbox" id="white" name="color" value="white">
+              <input class="filter-color-input" type="checkbox" id="white" name="color" value="white">
               <label for="white">
                 <span class="checkbox-indicator"></span>
                 Белый
               </label>
-              <input type="checkbox" id="blue" name="color" value="blue" checked>
+              <input class="filter-color-input" type="checkbox" id="blue" name="color" value="blue" checked>
               <label for="blue">
                 <span class="checkbox-indicator"></span>
                 Синий
               </label>
-              <input type="checkbox" id="red" name="color" value="red" checked>
+              <input class="filter-color-input" type="checkbox" id="red" name="color" value="red" checked>
               <label for="red">
                 <span class="checkbox-indicator"></span>
                 Красный
               </label>
-              <input type="checkbox" id="pink" name="color"  value="pink">
+              <input class="filter-color-input" type="checkbox" id="pink" name="color"  value="pink">
               <label for="pink">
                 <span class="checkbox-indicator"></span>
                 Розовый
@@ -114,12 +112,12 @@
             </fieldset>
             <fieldset class="filter-bluetooth">
               <legend>Bluetooth</legend>
-              <input type="radio" id="true" name="bluetooth" value="TRUE" checked>
+              <input class="filter-bluetooth-input" type="radio" id="true" name="bluetooth" value="TRUE" checked>
               <label for="true">
                 <span class="radio-indicator"></span>
                 Есть
               </label>
-              <input type="radio" id="false" name="bluetooth" value="FALSE">
+              <input class="filter-bluetooth-input" type="radio" id="false" name="bluetooth" value="FALSE">
               <label for="false">
                 <span class="radio-indicator"></span>
                 Нет
@@ -132,9 +130,9 @@
           <div class="flex-box sorting">
             <h2 class="catalogue-title">Сортировка:</h2>
             <ul class="sorting-list flex-box">
-              <li class="active"><a class="price" href="#">По цене</a></li>
-              <li><a class="type" href="#">По типу</a></li>
-              <li><a class="popularity" href="#">По популярности</a></li>
+              <li class="sorting-list-item active"><a href="#">По цене</a></li>
+              <li class="sorting-list-item"><a href="#">По типу</a></li>
+              <li class="sorting-list-item"><a href="#">По популярности</a></li>
             </ul>
             <div class="flex-box sort-arrows">
               <a class="arrow-up" href="#">Сортировать по-возрастанию</a>
@@ -143,8 +141,8 @@
           </div>
           <div class="items flex-box">
             <article class="item">
-              <div class="item-img">
-                <img src="img/item-1.jpg" width="360" height="380" alt="item-1">
+              <div class="item-img-box">
+                <img class="item-img" src="img/item-1.jpg" width="360" height="380" alt="item-1">
                 <div class="item-hover">
                   <button class="btn">В корзину</button>
                   <button class="add-compare">Добавить к сравнению</button>
@@ -156,8 +154,8 @@
               <span class="item-price">500 руб.</span>
             </article>
             <article class="item">
-              <div class="item-img">
-                <img src="img/item-2.jpg" width="360" height="380" alt="item-2">
+              <div class="item-img-box">
+                <img class="item-img" src="img/item-2.jpg" width="360" height="380" alt="item-2">
                 <div class="item-hover">
                   <button class="btn">В корзину</button>
                   <button class="add-compare">Добавить к сравнению</button>
@@ -169,8 +167,8 @@
               <span class="item-price">1 500 руб.</span>
             </article>
             <article class="item">
-              <div class="item-img">
-                <img src="img/item-3.jpg" width="360" height="380" alt="item-3">
+              <div class="item-img-box">
+                <img class="item-img" src="img/item-3.jpg" width="360" height="380" alt="item-3">
                 <div class="item-hover">
                   <button class="btn">В корзину</button>
                   <button class="add-compare">Добавить к сравнению</button>
@@ -182,8 +180,8 @@
               <span class="item-price">2 500 руб.</span>
             </article>
             <article class="item item-new">
-              <div class="item-img">
-                <img src="img/item-4.jpg" width="360" height="380" alt="item-4">
+              <div class="item-img-box">
+                <img class="item-img" src="img/item-4.jpg" width="360" height="380" alt="item-4">
                 <div class="item-hover">
                   <button class="btn">В корзину</button>
                   <button class="add-compare">Добавить к сравнению</button>
@@ -195,9 +193,9 @@
               <span class="item-price">4 900 руб.</span>
             </article>
           </div>
-          <div class="flex-box pages">
+          <div class="pages flex-box">
             <a class="prev-next prev">Назад</a>
-            <ul class="flex-box pages-list">
+            <ul class="pages-list flex-box">
               <li><a class="active">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
@@ -209,17 +207,17 @@
     </div>
     <footer class="main-footer">
       <div class="container">
-        <div class="flex-box footer-top">
+        <div class="footer-top flex-box">
           <div class="logo-footer">
             <a href="index.html">DEVICE</a>
           </div>
           <div class="user-panel-footer clearfix">
-            <a href="#" class="basket">Корзина</a>
+            <a href="#" class="cart">Корзина</a>
             <a href="#" class="compare">Срванить</a>
             <a href="#" class="login">Выйти</a>
           </div>
         </div>
-        <div class="flex-box footer-middle">
+        <div class="footer-middle flex-box">
           <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
           </div>
@@ -232,14 +230,14 @@
             <p>Тел.: +7 (495) 495-95-95</p>
           </div>
         </div>
-        <div class="flex-box footer-bottom">
+        <div class="footer-bottom flex-box">
           <div class="social-media">
-            <a class="social vk" href="#"><img src="img/facebook-svg-copy.png" alt="Facebook">Facebook</a>
-            <a class="social fb" href="#"><img src="img/insta-svg-copy.png" alt="Instagram">Instagram</a>
-            <a class="social insta" href="#"><img src="img/twitter-svg-copy.png" alt="Twitter">Twi  tter</a>
+            <a class="fb-social" href="#">Facebook</a>
+            <a class="insta-social" href="#">Instagram</a>
+            <a class="twitter-social" href="#">Twitter</a>
           </div>
           <div class="web-developer">
-            <a href="#"><img src="img/htmlacademy-still.png" width="27" height="34" alt="html academy logo"></a>
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
           </div>
         </div>
       </div>

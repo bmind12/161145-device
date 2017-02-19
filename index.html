@@ -2,41 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>DEVICE: Главная</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_min.css" rel="stylesheet">
   </head>
   <body>
-    <header class="container">
-      <div class="main-header">
+    <div class="container">
+      <header class="main-header">
         <div class="logo-header">
           <a>DEVICE</a>
         </div>
-        <div class="flex-box search-user-panel">
-          <div class="search">
-            <form action="/echo" method="get">
-              <input type="text" placeholder="Поиск по сайту">
-              <button class="search-btn" type="submit" name="search">Найти</button>
-            </form>
-          </div>
-          <div class="flex-box user-panel-header">
-            <div class="left-panel">
+        <div class="search-user-panel flex-box">
+          <form class="search" action="/echo" method="post">
+            <input type="text" placeholder="Поиск по сайту">
+            <button class="search-btn" type="submit" name="search">Найти</button>
+          </form>
+          <div class="user-panel-header flex-box">
+            <div class="left-user-panel">
               <a href="#" class="login">Войти</a>
             </div>
-            <div class="right-panel">
+            <div class="right-user-panel">
               <a href="#" class="compare">Срванить</a>
-              <a href="#" class="basket">Корзина</a>
+              <a href="#" class="cart">Корзина</a>
             </div>
           </div>
         </div>
-        <nav class="flex-box main-navigation">
+        <nav class="main-navigation flex-box">
           <div class="sections">
             <a class="sections-trigger" href="#">Каталог товаров</a>
-            <div class="flex-box hidden-sections">
+            <div class="hidden-sections flex-box">
               <div class="sections-col flex-box">
                 <a href="#">Виртуальная реальность</a>
-                <a href="#">Моноподы для селфи</a>
+                <a href="device-catalog.html">Моноподы для селфи</a>
                 <a href="#">Экшн-камеры</a>
               </div>
               <div class="sections-col flex-box">
@@ -48,25 +46,25 @@
               </div>
             </div>
           </div>
-          <div class="flex-box navigation">
+          <div class="navigation flex-box">
             <a href="#">Доставка</a>
             <a href="#">Гарантия</a>
             <a href="#">Контакты</a>
           </div>
         </nav>
-      </div>
-    </header>
-    <section class="container slider">
+      </header>
+    </div>
+    <section class="slider container">
       <input type="radio" name="toggle" id="btn-slide-1" value="slide-1" checked>
       <input type="radio" name="toggle" id="btn-slide-2" value="slide-2">
       <input type="radio" name="toggle" id="btn-slide-3" value="slide-3">
-      <div class="flex-box slider-toggles">
+      <div class="slider-toggles flex-box">
         <label class="toggle" for="btn-slide-1">Slider-1</label>
         <label class="toggle" for="btn-slide-2">Slider-2</label>
         <label class="toggle" for="btn-slide-3">Slider-3</label>
       </div>
-      <div class="flex-box slide slide-1">
-        <div class="slide-image image-1">
+      <div class="slide slide-1 flex-box">
+        <div class="slide-image slide-image-1">
           <img src="img/slider-1.png" width="384" height="486" alt="item-1 image">
         </div>
         <div class="slide-description description-1">
@@ -75,23 +73,23 @@
           <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <a class="btn" href="#">Подробнее</a>
           <ul class="details-list flex-box">
-            <li class="detail">
+            <li>
               <span class="details-main">8,5 м</span>
               <span class="details-desc">Длина палки</span>
             </li>
-            <li class="detail">
+            <li>
               <span class="details-main">5 кг</span>
               <span class="details-desc">Вес палки</span>
             </li>
-            <li class="detail">
+            <li>
               <span class="details-main">Карбон</span>
               <span class="details-desc">Материал</span>
             </li>
           </ul>
         </div>
       </div>
-      <div class="flex-box slide slide-2">
-        <div class="slide-image image-2">
+      <div class="slide slide-2 flex-box">
+        <div class="slide-image slide-image-2">
           <img src="img/slider-2.png" width="345" height="485" alt="item-2 image">
         </div>
         <div class="slide-description description-2">
@@ -100,27 +98,27 @@
           <p>Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a class="btn" href="#">Подробнее</a>
           <ul class="details-list flex-box">
-            <li class="detail">
+            <li>
               <span class="details-main">48 часов</span>
               <span class="details-desc">Без подзарядки</span>
             </li>
           </ul>
         </div>
       </div>
-      <div class="flex-box slide slide-3">
-        <div class="slide-image image-3">
+      <div class="slide slide-3 flex-box">
+        <div class="slide-image slide-image-3">
           <img src="img/slider-3.png" width="526" height="334" alt="item-3 image">
         </div>
         <div class="slide-description description-3">
           <h2>Порхает как бабочка, жалит как пчела!</h2>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером, замаскированным под стандартную камеру.</p>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="btn" href="#">Подробнее</a>
           <ul class="details-list flex-box">
-            <li class="detail">
+            <li>
               <span class="details-main">800 м</span>
               <span class="details-desc">Дальность полета</span>
             </li>
-            <li class="detail">
+            <li>
               <span class="details-main">50 м</span>
               <span class="details-desc">Радиус поражения</span>
             </li>
@@ -128,7 +126,7 @@
         </div>
       </div>
     </section>
-    <section class="container flex-box categories">
+    <section class="categories container flex-box">
       <div class="category">
         <a href="#">
           <div class="img-box">
@@ -138,7 +136,7 @@
         </a>
       </div>
       <div class="category">
-        <a href="#">
+        <a href="device-catalog.html">
           <div class="img-box">
             <img src="img/popular-2.png" width="160" height="160" alt="category-2">
           </div>
@@ -188,36 +186,34 @@
           <label class="service btn" for="btn-warranty">Гарантия</label>
           <label class="service btn" for="btn-credit">Кредит</label>
         </div>
-        <div class="services-detailes">
-          <div class="delivery service-details">
+        <div class="service-detailes">
+          <div class="service-details delivery">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <div class="warranty service-details">
+          <div class="service-details warranty">
             <h2>Гарантия</h2>
             <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
           </div>
-          <div class="credit service-details">
+          <div class="service-details credit">
             <h2>Кредит</h2>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="manufactures">
-      <div class="container flex-box">
-        <div class="manufacturer manufacturer-1">
-          <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="manufacturer-1"></a>
-        </div>
-        <div class="manufacturer manufacturer-2">
-          <a href="#"><img src="img/logo-2.png" width="260" height="100" alt="manufacturer-2"></a>
-        </div>
-        <div class="manufacturer manufacturer-3">
-          <a href="#"><img src="img/logo-3.png" width="260" height="100" alt="manufacturer-3"></a>
-        </div>
-        <div class="manufacturer manufacturer-4">
-          <a href="#"><img src="img/logo-4.png" width="260" height="100" alt="manufacturer-4"></a>
-        </div>
+    <section class="manufactures container flex-box">
+      <div class="manufacturer manufacturer-1">
+        <a href="#"><img src="img/logo-1.png" width="260" height="100" alt="DJI"></a>
+      </div>
+      <div class="manufacturer manufacturer-2">
+        <a href="#"><img src="img/logo-2.png" width="260" height="100" alt="SP Gadgets"></a>
+      </div>
+      <div class="manufacturer manufacturer-3">
+        <a href="#"><img src="img/logo-3.png" width="260" height="100" alt="GoPro"></a>
+      </div>
+      <div class="manufacturer manufacturer-4">
+        <a href="#"><img src="img/logo-4.png" width="260" height="100" alt="Vive"></a>
       </div>
     </section>
     <section class="container flex-box company">
@@ -236,22 +232,22 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <img class="map js-open-map" src="img/map.jpg" alt="location map" width="560" height="222">
-        <a class="btn write-us" href="#">Напишите нам</a>
+        <a class="btn write-us" href="writeus.html">Напишите нам</a>
       </div>
     </section>
     <footer class="main-footer">
       <div class="container">
-        <div class="flex-box footer-top">
+        <div class="footer-top flex-box">
           <div class="logo-footer">
             <a>DEVICE</a>
           </div>
           <div class="user-panel-footer clearfix">
-            <a href="#" class="basket">Корзина</a>
+            <a href="#" class="cart">Корзина</a>
             <a href="#" class="compare">Срванить</a>
             <a href="#" class="login">Войти</a>
           </div>
         </div>
-        <div class="flex-box footer-middle">
+        <div class="footer-middle flex-box">
           <div class="address">
             <p>г. Москва, ул. Строителей, 15</p>
           </div>
@@ -264,14 +260,14 @@
             <p>Тел.: +7 (495) 495-95-95</p>
           </div>
         </div>
-        <div class="flex-box footer-bottom">
+        <div class="footer-bottom flex-box">
           <div class="social-media">
-            <a class="social vk" href="#"><img src="img/facebook-svg-copy.png" alt="Facebook">Facebook</a>
-            <a class="social fb" href="#"><img src="img/insta-svg-copy.png" alt="Instagram">Instagram</a>
-            <a class="social insta" href="#"><img src="img/twitter-svg-copy.png" alt="Twitter">Twitter</a>
+            <a class="fb-social" href="#">Facebook</a>
+            <a class="insta-social" href="#">Instagram</a>
+            <a class="twitter-social" href="#">Twitter</a>
           </div>
           <div class="web-developer">
-            <a href="https://htmlacademy.ru/"><img src="img/htmlacademy-still.png" width="27" height="34" alt="html academy logo">HTML Academy</a>
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
           </div>
         </div>
       </div>
@@ -282,16 +278,16 @@
         <div class="flex-box user-details">
           <div class="user-name">
             <label>Ваше имя:</label>
-            <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста" required>
+            <input id="name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="user-email">
             <label>Ваш email:</label>
-            <input id="email" type="email" name="email" placeholder="Для отправки ответа" required>
+            <input id="email" type="email" name="email" placeholder="Для отправки ответа">
           </div>
         </div>
         <div class="user-message">
           <label>Текст письма</label>
-          <textarea id="message" name="message" placeholder="В свободной форме" required></textarea>
+          <textarea id="message" name="message" placeholder="В свободной форме"></textarea>
         </div>
         <button class="btn" type="submit" name="send">Отправить</button>
       </form>
@@ -301,6 +297,6 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779994!2d37.52742931639706!3d55.68703098053579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sul.+Stroiteley%2C+15%2C+Moskva%2C+Russia%2C+119311!5e0!3m2!1sen!2scz!4v1487048864063" width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <div class="modal-overlay"></div>
-    <script src="js/modal.js"></script>
+    <script src="js/modal_min.js"></script>
   </body>
 </html>
