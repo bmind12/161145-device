@@ -2,7 +2,7 @@ var btnMap = document.querySelector(".js-open-map");
 var btnWriteUs = document.querySelector(".write-us");
 var popupMap = document.querySelector(".modal-map");
 var popupWriteUs = document.querySelector(".modal-write-us");
-var overlay = document.querySelector(".modal-overlay");
+var body = document.querySelector("body");
 var closeMap = popupMap.querySelector(".modal-close");
 var closeWriteUs = popupWriteUs.querySelector(".modal-close");
 var writeUsName = popupWriteUs.querySelector("[name=name]");
@@ -13,13 +13,13 @@ var form = popupWriteUs.querySelector("form");
 btnMap.addEventListener("click", function(event) {
   event.preventDefault();
   popupMap.classList.toggle("modal-map-show");
-  overlay.classList.toggle("modal-overlay-show");
+  body.classList.toggle("modal-overlay");
 });
 
 btnWriteUs.addEventListener("click", function(event) {
   event.preventDefault();
   popupWriteUs.classList.toggle("modal-write-us-show");
-  overlay.classList.toggle("modal-overlay-show");
+  body.classList.toggle("modal-overlay");
   writeUsName.focus();
 });
 
@@ -56,13 +56,13 @@ form.addEventListener("submit", function(event) {
 closeMap.addEventListener("click", function(event) {
   event.preventDefault();
   popupMap.classList.remove("modal-map-show");
-  overlay.classList.remove("modal-overlay-show");
+  body.classList.remove("modal-overlay");
 });
 
 closeWriteUs.addEventListener("click", function(event) {
   event.preventDefault();
   popupWriteUs.classList.remove("modal-write-us-show");
-  overlay.classList.remove("modal-overlay-show");
+  body.classList.remove("modal-overlay");
   popupWriteUs.classList.remove("modal-error");
 });
 
@@ -70,6 +70,6 @@ overlay.addEventListener("click", function(event) {
   event.preventDefault();
   popupWriteUs.classList.remove("modal-write-us-show");
   popupMap.classList.remove("modal-map-show");
-  overlay.classList.remove("modal-overlay-show");
+  body.classList.remove("modal-overlay");
   popupWriteUs.classList.remove("modal-error");
 });
