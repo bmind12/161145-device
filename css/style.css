@@ -1755,7 +1755,7 @@ body
   position: relative;
 
   width: 360px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .item-img:hover + .item-hover
@@ -1837,39 +1837,31 @@ body
 
 .item-img-box
 {
-  overflow: hidden;
-
-  margin-bottom: 22px;
-}
-
-.item-img-box
-{
   width: 360px;
   height: 380px;
+  overflow: hidden;
+
+  margin-bottom: 36px;
 }
 
-.item-name
-{
+.item-name {
+  width: 260px;
+  display: inline-block;
+  vertical-align: baseline;
+  line-height: 20px;
   font-family: 'Gilroy', 'Verdana', sans-serif;
   font-weight: 700;
-  line-height: 22px;
-
-  display: inline-block;
-
-  width: 260px;
+  font-size: 18px;
   margin: 0;
-
-  vertical-align: baseline;
 }
 
 .item-name a
 {
-  font-size: 18px;
-  line-height: 18px;
-
   text-decoration: none;
 
   color: #464646;
+
+  margin: 0;
 }
 
 .item-price
@@ -1883,6 +1875,7 @@ body
   width: 100px;
 
   text-align: right;
+  line-height: 20px;
   vertical-align: top;
 
   color: #464646;
